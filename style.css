@@ -40,11 +40,14 @@ margin-right: 10px;
 }
 
 .banner {
-    height: 788.99px;
+    min-height: 788.99px;
+    width: 100%;
     background-image: url("https://static.wixstatic.com/media/913019_e598d73211d44dd8bcc85eae0245bec4~mv2_d_4000_6000_s_4_2.jpg/v1/fill/w_2826,h_789,al_c,q_90,usm_0.66_1.00_0.01/913019_e598d73211d44dd8bcc85eae0245bec4~mv2_d_4000_6000_s_4_2.webp");
     display: flex;
     justify-content: space-between;
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .banner h1 {
@@ -56,6 +59,7 @@ margin-right: 10px;
     margin-bottom: 0px;
     font-size: 31px;
     font-family: 'Libre Baskerville', serif;
+    z-index: 2000;
 }
 
 .banner p {
@@ -68,6 +72,7 @@ margin-right: 10px;
     font-family: 'Libre Baskerville', serif;
     letter-spacing: 2px;
     font-weight: 700;
+    z-index: 2000;
 }
 
 .bannerp {
@@ -76,21 +81,22 @@ margin-right: 10px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 450px;
+    max-width: 450px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 2000;
 }
 
 .pinkdiv {
-    height: 1px;
-    width: 60px;
+    height: 0.5px;
+    width: 14%;
     background-color: rgb(230, 190, 190);
     
 }
 
 .bannercards {
-    display: flex;
+display: flex;
 width: 33.333333%;
 align-items: center;
 }
