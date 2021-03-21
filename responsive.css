@@ -32,20 +32,19 @@
     }
     
     .ulright {
-        margin-top: 25px!important;
         flex-direction: row;
         justify-content: space-around;
     }
 
     .nav-L-item-left {
-        margin-top: 10px;
+        margin-top: 15px;
         color: black!important;
     }
     .nav-active-link {
         color: rgb(230, 190, 190)!important;
     }
     .navbar-nav {
-        margin-top: 60px!important;
+        margin-top: 30px!important;
     }
 
 
@@ -64,7 +63,7 @@
 
     .navbar-toggler {
         border: none; 
-        margin-bottom: 45px;   
+        margin-bottom: 60px;   
     }
 
 
