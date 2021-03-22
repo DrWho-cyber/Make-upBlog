@@ -31,7 +31,10 @@
     font-size: 11px;
     font-family: 'Libre Baskerville', serif;
     margin-left: 10px;
+    transition: 500ms;
 }
+
+
 
 .ulright i {
 color: rgb(152, 152, 152);
@@ -155,6 +158,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 500ms;
 }
 
 .card-title {
@@ -163,6 +167,21 @@ align-items: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(83, 106, 60);
     letter-spacing: 3px;
+    transition: 500ms;
+}
+
+
+.card-bodyfirst:hover {
+    
+    background-color: rgb(83, 106, 60);
+}
+
+.card-bodyfirst:hover .card-title{
+    color: rgb(230, 190, 190);  
+}
+
+.card-title:hover {
+    text-decoration: none;
 }
 
 /* აქედან იწყება ქარდების სექცია  */
@@ -269,4 +288,97 @@ margin-left: 6px;
 .cardsecond4 {
     background-image: url("https://static.wixstatic.com/media/84770f_b4a7042d653a470897e9fb8f76878da0~mv2_d_3280_4928_s_4_2.jpg/v1/fill/w_1110,h_1668,al_c,q_90,usm_0.66_1.00_0.01/84770f_b4a7042d653a470897e9fb8f76878da0~mv2_d_3280_4928_s_4_2.webp");
     background-position: center;
+}
+
+
+/* მესამე სექცია */
+
+.allposts {
+    display: flex;
+    max-height: 240px;
+    min-height: 100px;
+}
+
+.postsbtn {
+    width: 152px;
+    height: 43px;
+    background-color: rgb(230, 190, 190);
+    margin:auto;
+    border: none;
+    font-size: 14.5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(83, 106, 60);
+    letter-spacing: 1px;
+    border-radius: 1px;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.postsbtn:hover {
+    color: rgb(230, 190, 190);  
+    background-color: rgb(83, 106, 60);
+}
+
+
+/* მეოთხე სექცია ABOUT ME */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 410px;
+    background-color: rgb(230, 190, 190);
+}
+
+.about h1, p {
+    text-align:center;
+    max-width: 510px;
+    
+}
+
+.about h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    color: rgb(83, 106, 60);
+}
+
+.about p {
+    margin: 40px auto;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(83, 106, 60);
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.line {
+    min-width: 50px;
+    min-height: 2px;
+    background-color: rgb(83, 106, 60);
+    margin: 0 auto;
+    
+}
+
+.readmorebtn {
+    width: 152px;
+    height: 43px;
+    background-color: rgb(83, 106, 60);
+    margin:0 auto;
+    border: none;
+    font-size: 14.5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230, 190, 190);
+    letter-spacing: 1px;
+    border-radius: 1px;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.readmorebtn:hover {
+    color: rgb(83, 106, 60);  
+    background-color: rgb(206, 152, 152);
 }
