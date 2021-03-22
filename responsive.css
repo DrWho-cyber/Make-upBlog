@@ -1,3 +1,105 @@
+@media only screen and (max-width: 20000px) and (min-width: 2945px) {
+    .banner {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+        position: relative;
+        background-color: white!important;
+    }
+
+    .navbar-toggler {
+        height: 50px;
+        width: 50px;
+        margin: auto;
+    }
+    
+    .banner {
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: cover;
+    }
+
+    .bannercards {
+    width: 100%;
+    justify-content: center;
+    }
+
+    .bannercardsdiv {
+      width: 100%;
+      margin-bottom: 25px;
+      margin-top: 10px;
+    }
+
+    .pinkdiv {
+        width: 7%;
+    }
+    
+    .ulright {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-L-item-left {
+        margin-top: 15px;
+        color: black!important;
+    }
+    .nav-active-link {
+        color: rgb(230, 190, 190)!important;
+    }
+    .navbar-nav {
+        margin-top: 30px!important;
+    }
+
+
+    .banner h1 {
+        margin-top: 10px;
+        font-size: 36px;
+        top: 80px;
+    }
+
+    .bannerp {
+        margin-top: 16px;
+        top: 130px;
+    }
+
+    .bannerp p {
+        
+        font-size: 15px;
+    }
+
+    .second img {
+        object-position: 5% 95%;
+    }
+    
+    .navbar {
+        min-height: 130px;
+    }
+
+    .navbar-toggler {
+        border: none; 
+        margin-bottom: 60px;   
+    }
+
+    .cardsecond {
+        width: 100%;
+    }
+
+    .card-bodyfirst {
+        width: 400px;
+        height: 70px;
+        bottom: -40px;
+        margin-bottom:20px;
+    }
+
+    .card-title {
+        font-size: 36px;
+        font-family: 'Libre Baskerville', serif;
+    }
+}
+
 @media screen and (max-width:767px){
     
     .navbar {
@@ -10,21 +112,18 @@
     }
     
     .banner {
-        flex-direction: column;
-        height: 1274px;
-        justify-content: space-around;
-       
+    flex-direction: column;
+    justify-content: space-around;
+     background-size: cover;
     }
 
     .bannercards {
     width: 100%;
-    justify-content: center;
-    
-    }
+    justify-content: center;}
 
     .bannercardsdiv {
-        height: 320px;
-        width: 224px;
+      margin-bottom: 25px;
+      margin-top: 10px;
     }
 
     .pinkdiv {
@@ -64,6 +163,10 @@
     .navbar-toggler {
         border: none; 
         margin-bottom: 60px;   
+    }
+
+    .cardsecond {
+        width: 100%;
     }
 
 
