@@ -1,8 +1,12 @@
-
+body {
+    margin: 0px;
+    padding: 0px;
+}
 .navbar {
     width: 98%;
     background-color: transparent!important;
     margin: 20px auto;
+    z-index: 10000!important;
 }
 
 .collapse {
@@ -10,12 +14,13 @@
     justify-content: space-between;
 }
 
+
 .navbar-nav {
     margin: 0px!important;
 }
 
 .nav-L-item-left {
-    color: rgb(230, 190, 190)!important;
+    color: rgb(207, 152, 152)!important;
     font-size: 11px;
     font-family: 'Libre Baskerville', serif;
     margin-left: 10px;
@@ -23,15 +28,18 @@
 
 .ulright {
     margin-right: 10px!important;
-    
 }
 
-.nav-active-link {
-    color: rgb(208, 220, 198)!important;
+.navhome {
+    color: rgb(172, 204, 146)!important;
     font-size: 11px;
     font-family: 'Libre Baskerville', serif;
     margin-left: 10px;
     transition: 500ms;
+}
+
+.navhome:hover {
+    color: rgb(120, 173, 77)!important;
 }
 
 
@@ -330,10 +338,14 @@ margin-left: 6px;
     background-color: rgb(230, 190, 190);
 }
 
-.about h1, p {
+.about h1 {
     text-align:center;
-    max-width: 510px;
-    
+    max-width: 510px; 
+}
+
+.about p {
+    text-align:center;
+    max-width: 510px; 
 }
 
 .about h1 {
@@ -349,6 +361,7 @@ margin-left: 6px;
     margin: 40px auto;
     margin-bottom: 25px;
     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     font-weight: 400;
     color: rgb(83, 106, 60);
     box-sizing: border-box;
@@ -388,151 +401,171 @@ margin-left: 6px;
 /* კარუსელი მრავალი სურათით */
 
 .carusel {
-    min-height: 636px;
+    max-height: 636px!important;
 }
 
 .container-fluid {
 padding: 0px;
 }
+
 .carousel-item img {
     
-    height: 100%;
-    width: 100%;
+height: 100%;
+width: 100%;
 object-fit: cover;
 }
 
 .carousel-item {
-    margin: 0px;
     padding: 0px;
 }
-/*
-    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
-    code customized by Azmind.com
-*/
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Show 4th slide on md if col-md-4*/
-    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
+
+.d-md-block {
+    
+    width: 100%;
+    height: 100%;
+    left:0%!important;
+    bottom: 0px!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center!important;
+    transition: 500ms;
+
 }
-@media (min-width: 576px) and (max-width: 768px) {
-    /* Show 3rd slide on sm if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -50%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
+
+.d-md-block p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: transparent;
+    transition: 500ms;
 }
-@media (min-width: 576px) {
-    .carousel-item {
-        margin-right: 0;
-    }
-    /* show 2 items */
-    .carousel-inner .active + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* farthest right hidden item must be also positioned for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
+
+
+.d-md-block:hover {
+    background-color: rgba(0, 0, 0, 0.322);
 }
-/* MD */
-@media (min-width: 768px) {
-    /* show 3rd of 3 item slide */
-    .carousel-inner .active + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
+
+.d-md-block:hover p{
+    color: white;
 }
-/* LG */
-@media (min-width: 991px) {
-    /* show 4th item */
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
+
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 10;
 }
+
+/* footer */
+
+footer {
+    min-height: 310px;
+}
+
+.fbottomdiv {
+    display: flex;
+    flex-direction:column; 
+    justify-content: space-around;
+    min-height: 270px;
+    max-width: 475px;
+    margin: auto;
+}
+
+.fbottomdiv h6 {
+    margin:80px auto;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: left;
+    max-width: 450px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(83, 106, 60);
+}
+
+.fbottomdiv p {
+    text-align: center;
+    color: rgb(83, 106, 60);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.footerform {
+    display: flex;
+    max-width: 470px;
+    height: 50px;
+    margin: auto;
+}
+
+.footerul {
+margin-right: 10px!important;
+}
+
+.footerul i {
+color: rgb(152, 152, 152);
+font-size: 14px;
+margin-right: 10px;
+}
+
+.footerul {
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-around;
+}
+
+.fuldiv {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+.footerbtn {
+    height: 34px;
+    width: 106px;
+    background-color: rgb(83, 106, 60);
+    border: none;
+    margin-top: 4px;
+    font-size: 14.5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(230, 190, 190);
+    letter-spacing: 1px;
+    border-radius: 1px;
+    font-weight: 500;
+    transition: 500ms;
+}
+
+.footerbtn:hover {
+    color: rgb(83, 106, 60);  
+    background-color: rgb(206, 152, 152);
+}
+
+.footermail {
+    max-width: 343px;
+    padding:3px 3px 3px 21px;
+    border: none;
+    border-bottom: solid 1px rgb(83, 106, 60);
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.footerform ::placeholder {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(83, 106, 60);  
+}
+
+.footerform {
+    justify-content: space-between;
+}
+
+
+/* input focus and textarea focus */
+
+input:focus, textarea:focus
+{
+border: none!important;
+border-bottom: solid 1px rgb(83, 106, 60)!important;
+box-shadow: none!important;
+}
+
+/* the end */
