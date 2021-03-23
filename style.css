@@ -10,7 +10,6 @@ body {
 }
 
 .collapse {
-    
     justify-content: space-between;
 }
 
@@ -24,6 +23,7 @@ body {
     font-size: 11px;
     font-family: 'Libre Baskerville', serif;
     margin-left: 10px;
+    transition: 500ms;
 }
 
 .ulright {
@@ -38,11 +38,9 @@ body {
     transition: 500ms;
 }
 
-.navhome:hover {
+.nav-L-item-left:hover {
     color: rgb(120, 173, 77)!important;
 }
-
-
 
 .ulright i {
 color: rgb(152, 152, 152);
