@@ -170,7 +170,7 @@ align-items: center;
 .card-title {
     margin:0px;
     font-size: 14.5px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(83, 106, 60);
     letter-spacing: 3px;
     transition: 500ms;
@@ -565,3 +565,55 @@ box-shadow: none!important;
 }
 
 /* the end */
+
+
+/* animations with@keyframes */
+
+@keyframes opacity {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+
+body {
+    
+        animation: 700ms ease-out 0s 1 opacity!important;
+}
+
+
+@keyframes fadIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+
+.bannercardsdiv img {
+    animation: 1200ms ease-out 0s 1 fadIn!important;
+}
+
+.bannercardsdiv {
+    background-color: transparent;
+}
+
+@keyframes opacityty {
+    0% {
+        opacity: 0;
+      }
+      90% {
+        opacity: 0;
+      }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+.card-bodyfirst {
+    animation: 1500ms ease-in 0s 1 opacityty!important;
+}

@@ -266,6 +266,9 @@ transition: 300ms;
     display: none;
 }
 
+.cardform,.coomentsArea {
+    font-size: 14px;
+}
 /* footer */
 
 footer {
@@ -381,3 +384,69 @@ box-shadow: none!important;
 }
 
 /* the end */
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+.card-body h5,.card-body h6 {
+    animation: 1s ease-out 0s 1 slideInFromTop!important;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .cardform,.coomentsArea {
+    animation: 1s ease-out 0s 1 slideInFromLeft!important;
+}
+
+
+@keyframes fadIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+
+.submitbtn {
+    animation: 1s ease-out 0s 1 fadIn!important;
+}
+
+
+.inputp {
+    animation: 1000ms ease-out 0s 1 fadIn!important;
+}
+
+.greenline {
+    animation: 1000ms ease-out 0s 1 fadIn!important;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+
+body {
+    
+        animation: 700ms ease-out 0s 1 opacity!important;
+}
+
+
