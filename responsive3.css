@@ -272,6 +272,14 @@
 .submitbtn {
     background-color: rgb(83, 106, 60);
     color: rgb(230, 190, 190);
+    font-size: 14.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 90%;
+    height: 34px;
+    box-sizing: border-box;
 }
 /* footer */
     .fbottomdiv h6 {

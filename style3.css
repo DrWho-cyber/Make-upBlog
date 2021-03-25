@@ -181,7 +181,6 @@ transition: 300ms;
     flex-direction: column;
     justify-content: space-between;
     min-width: 50%;
-   
     align-items: center;
     text-align: center;
     background-color: rgb(230, 190, 190);
@@ -215,6 +214,7 @@ transition: 300ms;
 
 .cardform {
     text-align: left;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .cardform input {
