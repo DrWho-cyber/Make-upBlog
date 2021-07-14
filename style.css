@@ -563,7 +563,11 @@ border: none!important;
 border-bottom: solid 1px rgb(83, 106, 60)!important;
 box-shadow: none!important;
 }
+/* badge */
 
+.badge-base {
+    background-color: rgba(59, 47, 218, 0.37);
+}
 /* the end */
 
 
